@@ -1,0 +1,48 @@
+#app:
+#  data:
+#    key:
+#      url: localhost
+#      login: admin
+#      password: pass
+#      database: cars
+#  web:
+#    port: 8080
+#  name:
+#    test: danila
+
+server:
+  port: 8080
+spring:
+  application:
+    name: MyApp
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+book:
+  service: true
+
+car:
+  types:
+    BMW:
+      name: BMW x5
+      age: 20
+      color: black
+    AUDI:
+      name: AUDI A6
+      age: 15
+      color: white
+    HONDA:
+      name: HONDA Civic
+      age: 10
+      color: red

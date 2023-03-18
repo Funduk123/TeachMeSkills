@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+car:
+  types:
+    Citroen:
+      name: Citroen Xantia
+      age: 24
+      color: black
+    AUDI:
+      name: AUDI A6
+      age: 15
+      color: white
+    HONDA:
+      name: HONDA Civic
+      age: 10
+      color: red

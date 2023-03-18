@@ -8,6 +8,26 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Hibernate" />
+            <option value="$PROJECT_DIR$/Homework_42" />
+            <option value="$PROJECT_DIR$/Lesson_22" />
+            <option value="$PROJECT_DIR$/Lesson_23" />
+            <option value="$PROJECT_DIR$/Lesson_24-25" />
+            <option value="$PROJECT_DIR$/Lesson_26" />
+            <option value="$PROJECT_DIR$/Lesson_27" />
+            <option value="$PROJECT_DIR$/Lesson_28" />
+            <option value="$PROJECT_DIR$/Lesson_30" />
+            <option value="$PROJECT_DIR$/Lesson_31" />
+            <option value="$PROJECT_DIR$/Lesson_32" />
+            <option value="$PROJECT_DIR$/Lesson_33" />
+            <option value="$PROJECT_DIR$/Lesson_34" />
+            <option value="$PROJECT_DIR$/Spring-JDBC" />
+            <option value="$PROJECT_DIR$/SpringBoot_DataBase" />
+            <option value="$PROJECT_DIR$/SpringBoot_MVC" />
+            <option value="$PROJECT_DIR$/SpringBoot_Start_Profile" />
+            <option value="$PROJECT_DIR$/SpringWeb" />
+            <option value="$PROJECT_DIR$/SpringWebHomework" />
+            <option value="$PROJECT_DIR$/TimerStarter" />
           </set>
         </option>
       </GradleProjectSettings>

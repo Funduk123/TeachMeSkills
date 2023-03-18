@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.tms.springCore.message.MailMessenger" name="mail"/>
+    <bean class="org.tms.springCore.message.TelegramMessenger" name="telegram" primary="true"/>
+
+
+    <bean class="org.tms.springCore.user.UserFileService" name="dbService"/>
+    <bean class="org.tms.springCore.user.UserHandlerImpl" name="handler"
+
+          scope="prototype"
+          init-method="setup"
+          destroy-method="cleanCache"
+          autowire="constructor"
+    >
+
+<!--        <constructor-arg name="service" ref="dbService"/>-->
+<!--        <constructor-arg name="messenger" ref="telegram"/>-->
+
+    </bean>
+
+</beans>
