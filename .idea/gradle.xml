@@ -31,15 +31,6 @@
           </set>
         </option>
       </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-MVC" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/Spring-Boot-MVC" />
-          </set>
-        </option>
-      </GradleProjectSettings>
     </option>
   </component>
 </project>
