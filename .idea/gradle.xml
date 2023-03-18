@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -27,6 +28,15 @@
             <option value="$PROJECT_DIR$/SpringWeb" />
             <option value="$PROJECT_DIR$/SpringWebHomework" />
             <option value="$PROJECT_DIR$/TimerStarter" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-MVC" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Spring-Boot-MVC" />
           </set>
         </option>
       </GradleProjectSettings>
