@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+<!-- Проверка условия (если true) -->
+<div th:if="${isAdmin}">
+    <h3> I am Admin </h3>
+</div>
+
+<!-- Проверка условия (если false) -->
+<div th:unless="${isAdmin}">
+    <h3> I am not Admin </h3>
+</div>
+
+<hr>
+
+<!-- Вставка фрагмента из test.html -->
+<div th:replace="fragment/test :: hello1"></div>
+<div th:replace="fragment/test :: hello2"></div>
+
+<hr>
+
+Hello from home
+
+<!-- Передача объекта -->
+<div th:text="${car}"/>
+
+<!-- Передача поля объекта -->
+<div th:text="${car.brand}"/>
+
+<!-- Передача результата метода -->
+<div th:text="${car.getFullCar()}"/>
+
+<!-- Передача объекта из Map -->
+<div th:text="${carMap.car.getFullCar()}"/>
+
+<hr>
+
+<!-- Локализация -->
+<p th:text="#{label.message}"/>
+
+</body>
+</html>

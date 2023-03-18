@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Store</title>
+</head>
+<body>
+
+<div class="container">
+
+<form method="post" th:object="${book}" th:action="@{/bookStore/update/{id}(id=${book.id})}">
+  <input type="text" th:field="*{name}" th:value="${book.name}">
+  <input type="number" th:field="*{pages}" th:value="${book.pages}">
+  <input type="number" th:field="*{price}" th:value="${book.price}">
+  <button>Update</button>
+</form>
+
+</div>
+
+</body>
+</html>

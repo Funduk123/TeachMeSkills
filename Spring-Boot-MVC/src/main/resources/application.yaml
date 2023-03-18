@@ -1,0 +1,11 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
