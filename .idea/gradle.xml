@@ -41,6 +41,78 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-Rest" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Spring-Boot-Rest" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-Rest/Homework" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Spring-Boot-Rest/Homework" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-Rest/Homework/order-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Spring-Boot-Rest/Homework/order-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-Rest/Homework/user-service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Spring-Boot-Rest/Homework/user-service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-Rest/Rest-1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Spring-Boot-Rest/Rest-1" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-Rest/Rest-2" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Spring-Boot-Rest/Rest-2" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-Rest/Rest-3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Spring-Boot-Rest/Rest-3" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-Rest/Rest-4" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Spring-Boot-Rest/Rest-4" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>

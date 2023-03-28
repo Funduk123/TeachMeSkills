@@ -1,7 +1,6 @@
 package com.springbootmvc.web;
 
 import com.springbootmvc.entity.BookEntity;
-import com.springbootmvc.repository.BookRepository;
 import com.springbootmvc.service.BookService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -14,7 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 public class BookController {
 
     private final BookService service;
-    private final BookRepository repository;
 
     @GetMapping
     public ModelAndView bookStore(@ModelAttribute(name = "newBook") BookEntity book) {
