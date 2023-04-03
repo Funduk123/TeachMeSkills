@@ -1,0 +1,15 @@
+#spring:
+#  security:
+#    user:
+#      name: user
+#      password: password
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/security
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
