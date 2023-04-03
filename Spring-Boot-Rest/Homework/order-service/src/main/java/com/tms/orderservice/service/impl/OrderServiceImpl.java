@@ -7,6 +7,7 @@ import com.tms.orderservice.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -18,7 +19,10 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public OrderResponse createOrder(StoreRequest storeRequest) {
 
-        var user = userClient.getById(storeRequest.getId());
+        var user = Optional.ofNullable(storeRequest)
+                .map(StoreRequest::getId)
+                .map(userClient::getById)
+                .orElseThrow(NullPointerException::new);
 
         return OrderResponse.builder()
                 .orderId(UUID.randomUUID())
@@ -26,5 +30,4 @@ public class OrderServiceImpl implements OrderService {
                 .phone(user.getPhone())
                 .build();
     }
-
 }

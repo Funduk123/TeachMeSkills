@@ -9,23 +9,23 @@ import java.util.UUID;
 
 @FeignClient(
         name = "userClient",
-        url = "http://127.0.0.1:8091"
+        url = "http://127.0.0.1:8091/users"
 )
 public interface UserClient {
 
-    @GetMapping("/users")
+    @GetMapping
     List<UserDto> getAll();
 
-    @GetMapping("/users/{id}")
+    @GetMapping("/{id}")
     UserDto getById(@PathVariable(name = "id") UUID id);
 
-    @PostMapping("/users")
+    @PostMapping
     UserDto create(@RequestBody UserDto userDto);
 
-    @PutMapping("/users")
+    @PutMapping
     UserDto update(@RequestBody UserDto userDto);
 
-    @DeleteMapping("/users/{id}")
+    @DeleteMapping("/{id}")
     void delete(@PathVariable(name = "id") UUID id);
 
 }

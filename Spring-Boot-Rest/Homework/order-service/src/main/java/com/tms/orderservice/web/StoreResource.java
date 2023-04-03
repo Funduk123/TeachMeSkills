@@ -29,7 +29,7 @@ public class StoreResource {
     }
 
     @ExceptionHandler(OrderException.class)
-    public ResponseEntity<ErrorResponse> processError() {
+    public ResponseEntity<StoreRequest> processError() {
         return ResponseEntity.badRequest().build();
     }
 
