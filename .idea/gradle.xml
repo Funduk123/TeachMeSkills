@@ -23,7 +23,10 @@
             <option value="$PROJECT_DIR$/Lesson_33" />
             <option value="$PROJECT_DIR$/Lesson_34" />
             <option value="$PROJECT_DIR$/Spring-Boot-MVC" />
+            <option value="$PROJECT_DIR$/Spring-Boot-Rest" />
+            <option value="$PROJECT_DIR$/Spring-Boot-Security" />
             <option value="$PROJECT_DIR$/Spring-JDBC" />
+            <option value="$PROJECT_DIR$/Spring-Token-Rest" />
             <option value="$PROJECT_DIR$/SpringBoot_DataBase" />
             <option value="$PROJECT_DIR$/SpringBoot_Start_Profile" />
             <option value="$PROJECT_DIR$/SpringWeb" />
@@ -34,19 +37,10 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-MVC" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Repeat" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/Spring-Boot-MVC" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-Rest" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/Spring-Boot-Rest" />
+            <option value="$PROJECT_DIR$/Repeat" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -124,10 +118,10 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Tests" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Test" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/Spring-Tests" />
+            <option value="$PROJECT_DIR$/Spring-Test" />
           </set>
         </option>
       </GradleProjectSettings>

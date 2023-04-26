@@ -19,4 +19,7 @@ include 'TimerStarter'
 include 'Homework_42'
 include 'SpringBoot_DataBase'
 include 'Spring-Boot-MVC'
+include 'Spring-Boot-Rest'
+include 'Spring-Boot-Security'
+include 'Spring-Token-Rest'
 
