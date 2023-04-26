@@ -37,15 +37,6 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Repeat" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/Repeat" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-Rest/Homework" />
         <option name="modules">
           <set>
@@ -118,10 +109,10 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Test" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spring-Boot-Tests" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/Spring-Test" />
+            <option value="$PROJECT_DIR$/Spring-Boot-Tests" />
           </set>
         </option>
       </GradleProjectSettings>
