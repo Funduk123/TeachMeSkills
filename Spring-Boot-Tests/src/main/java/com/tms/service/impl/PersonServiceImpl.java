@@ -19,7 +19,7 @@ public class PersonServiceImpl implements PersonService {
 
     private final PersonRepository repository;
 
-    private final PersonClient client;
+    private final PersonClient personClient;
 
     private final AuthClient authClient;
 
@@ -65,8 +65,8 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public PersonDto getByUsername(String username) {
-        client.validate();
         authClient.validate();
+        PersonDto personDto = personClient.validate();
         return new PersonDto(username, "123", false, 22);
     }
 }

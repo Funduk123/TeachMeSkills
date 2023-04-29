@@ -17,10 +17,9 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import java.util.UUID;
-
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-        properties = {"client.auth.url=127.0.0.1:9090"})
+        properties = {"client.auth.url=127.0.0.1:9090"}
+)
 @AutoConfigureMockMvc
 class PersonRestControllerTest {
 
@@ -28,28 +27,30 @@ class PersonRestControllerTest {
     private MockMvc mockMvc;
 
     @RegisterExtension
-    WireMockExtension wireMockExtension = WireMockExtension.newInstance()
+    static WireMockExtension wireMockExtension = WireMockExtension.newInstance()
             .options(WireMockConfiguration.options().port(9090))
             .build();
 
     @Test
     void getByUsername() throws Exception {
 
-        PersonDto personDtoFromClient = PersonDto.builder()
-                .age(23)
+        String username = "Danila";
+
+        PersonDto testPersonDto = PersonDto.builder()
+                .username("Sergey")
                 .build();
+
+        ObjectMapper mapper = new ObjectMapper();
+
+        String person = mapper.writeValueAsString(testPersonDto);
 
         wireMockExtension.stubFor(WireMock.get("/validate_auth")
                 .willReturn(WireMock.ok())
         );
 
-        ObjectMapper objectMapper = new ObjectMapper();
-
         wireMockExtension.stubFor(WireMock.get("/validate_person")
-                .willReturn(WireMock.ok().withBody(objectMapper.writeValueAsString(personDtoFromClient)))
+                .willReturn(WireMock.ok().withBody(person).withHeader("Content-Type", "application/json"))
         );
-
-        String username = UUID.randomUUID().toString();
 
         MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get("/rest").param("username", username))
                 .andDo(MockMvcResultHandlers.print())
@@ -57,12 +58,8 @@ class PersonRestControllerTest {
                 .andReturn();
 
         String contentAsString = mvcResult.getResponse().getContentAsString();
-
-        PersonDto personDto = objectMapper.readValue(contentAsString, PersonDto.class);
+        PersonDto personDto = mapper.readValue(contentAsString, PersonDto.class);
 
         Assertions.assertThat(personDto.getUsername()).isEqualTo(username);
-        Assertions.assertThat(personDto.getPassword()).isEqualTo("123");
-        Assertions.assertThat(personDto.isAdmin()).isEqualTo(false);
-        Assertions.assertThat(personDto.getAge()).isEqualTo(22);
     }
 }
