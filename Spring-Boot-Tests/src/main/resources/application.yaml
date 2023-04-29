@@ -1,0 +1,5 @@
+client:
+  person:
+    url: 127.0.0.1:9090
+  auth:
+    url: 127.0.0.1:9091
